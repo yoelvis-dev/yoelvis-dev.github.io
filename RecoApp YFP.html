@@ -1,0 +1,304 @@
+<html><head><base href="https://recomendacionesapps.com/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RecoApps - Recomendaciones de Apps, Programas y Juegos</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  }
+  header {
+    background-color: #4a69bd;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  nav {
+    background-color: #0c2461;
+    padding: 0.5rem;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 0 1rem;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  .app-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .app-card:hover {
+    transform: translateY(-5px);
+  }
+  .app-card h3 {
+    color: #4a69bd;
+    margin-top: 0;
+  }
+  .app-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+  }
+  .app-info {
+    flex: 1;
+  }
+  footer {
+    background-color: #4a69bd;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  #randomGame {
+    background-color: #4a69bd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  #randomGame:hover {
+    background-color: #3a559b;
+  }
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav ul li {
+      margin: 0.5rem 0;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>RecoApps</h1>
+    <p>Tus mejores recomendaciones de apps, programas y juegos para móvil y PC</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#movil">Apps Móviles</a></li>
+      <li><a href="#pc">Programas PC</a></li>
+      <li><a href="#juegos">Juegos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section id="inicio">
+      <h2>Bienvenido a RecoApps</h2>
+      <p>Descubre las mejores aplicaciones, programas y juegos para mejorar tu productividad y entretenimiento. Haz clic en cualquier app, programa o juego para visitar su sitio oficial.</p>
+    </section>
+    
+    <section id="movil">
+      <h2>Apps Móviles Recomendadas</h2>
+      <div class="app-card" onclick="window.open('https://www.adobe.com/products/photoshop-express.html', '_blank')">
+        <svg class="app-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#31A8FF" d="M10.53 10.73c-.1-.31-.19-.61-.29-.92-.1-.31-.19-.6-.27-.89-.08-.28-.15-.54-.22-.78h-.02c-.09.43-.2.86-.34 1.29-.15.48-.3.98-.46 1.48-.14.51-.29.98-.44 1.4h2.54c-.14-.46-.29-.96-.45-1.47-.02-.07-.03-.11-.05-.11zm-8.63 2.85v9.52h4.69l.31-1.74h2.19l.31 1.74h4.69v-9.52h-12.19zm5.27 5.25c-.37-1.18-.77-2.4-1.19-3.65h-.02c-.36 1.26-.71 2.47-1.05 3.65h2.26zm9.33-5.25v9.52h5.19v-2.31h-2.5v-7.21h-2.69z"/>
+        </svg>
+        <div class="app-info">
+          <h3>Adobe Photoshop Express</h3>
+          <p>Edita tus fotos como un profesional con esta potente aplicación móvil de Adobe.</p>
+        </div>
+      </div>
+      <div class="app-card" onclick="window.open('https://www.fitbit.com/global/us/home', '_blank')">
+        <svg class="app-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#00B0B9" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.75c-5.385 0-9.75-4.365-9.75-9.75S6.615 2.25 12 2.25s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75zM12 6c-3.312 0-6 2.688-6 6s2.688 6 6 6 6-2.688 6-6-2.688-6-6-6z"/>
+        </svg>
+        <div class="app-info">
+          <h3>Fitbit</h3>
+          <p>Mantén un registro de tu actividad física y mejora tu salud con esta app de fitness líder en el mercado.</p>
+        </div>
+      </div>
+      <div class="app-card" onclick="window.open('https://www.youtube.com/mobile', '_blank')">
+        <svg class="app-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#FF0000" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+        </svg>
+        <div class="app-info">
+          <h3>YouTube</h3>
+          <p>Disfruta de millones de videos, música y contenido original desde tu dispositivo móvil.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="pc">
+      <h2>Programas PC Recomendados</h2>
+      <div class="app-card" onclick="window.open('https://www.blackmagicdesign.com/products/davinciresolve', '_blank')">
+        <svg class="app-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#F09000" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.75c-5.385 0-9.75-4.365-9.75-9.75S6.615 2.25 12 2.25s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75zM10 7v10l8-5-8-5z"/>
+        </svg>
+        <div class="app-info">
+          <h3>DaVinci Resolve</h3>
+          <p>Edición de video profesional al alcance de todos. Perfecto para creadores de contenido.</p>
+        </div>
+      </div>
+      <div class="app-card" onclick="window.open('https://code.visualstudio.com/', '_blank')">
+        <svg class="app-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#007ACC" d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/>
+        </svg>
+        <div class="app-info">
+          <h3>Visual Studio Code</h3>
+          <p>El entorno de desarrollo integrado ideal para programadores de todos los niveles, creado por Microsoft.</p>
+        </div>
+      </div>
+      <div class="app-card" onclick="window.open('https://www.virtualdj.com/', '_blank')">
+        <svg class="app-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#1ED760" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 21.75c-5.385 0-9.75-4.365-9.75-9.75S6.615 2.25 12 2.25s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75zM8 8h3v8H8V8zm5 0h3v8h-3V8z"/>
+        </svg>
+        <div class="app-info">
+          <h3>Virtual DJ</h3>
+          <p>Software de mezcla de música profesional para DJs, con soporte para controladores y efectos en tiempo real.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="juegos">
+      <h2>Juegos de Calidad</h2>
+      <button id="randomGame">¡Descubre un juego aleatorio!</button>
+      <div id="gameList">
+        <div class="app-card" onclick="window.open('https://www.minecraft.net/', '_blank')">
+          <svg class="app-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#00AA00" d="M4 2h16c1.1 0 2 .9 2 2v16c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2zm0 2v16h16V4H4zm2 2h12v12H6V6zm2 2v8h8V8H8zm2 2h4v4h-4v-4z"/>
+          </svg>
+          <div class="app-info">
+            <h3>Minecraft</h3>
+            <p>Un mundo abierto de aventuras y construcción, donde tu imaginación es el límite.</p>
+          </div>
+        </div>
+        <div class="app-card" onclick="window.open('https://www.rocketleague.com/', '_blank')">
+          <svg class="app-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#1E90FF" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-2-13v10l9-5-9-5z"/>
+          </svg>
+          <div class="app-info">
+            <h3>Rocket League</h3>
+            <p>Fútbol con coches: un juego deportivo único que combina habilidad y emoción.</p>
+          </div>
+        </div>
+        <div class="app-card" onclick="window.open('https://www.stardewvalley.net/', '_blank')">
+          <svg class="app-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#8B4513" d="M12 2L1 9l11 7 9-7-9-7zm0 18c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm1-9.94v3.94h-2v-3.94l-4.24-2.78 1-1.73 3.76 2.45 3.76-2.45 1 1.73L13 10.06z"/>
+          </svg>
+          <div class="app-info">
+            <h3>Stardew Valley</h3>
+            <p>Un encantador juego de simulación de granja con elementos RPG y una comunidad acogedora.</p>
+          </div>
+        </div>
+        <div class="app-card" onclick="window.open('https://www.ea.com/games/apex-legends', '_blank')">
+          <svg class="app-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#FF4500" d="M12 2L1 21h22L12 2zm0 4l7.53 13H4.47L12 6zm0 2.58L6.92 18h10.16L12 8.58z"/>
+          </svg>
+          <div class="app-info">
+            <h3>Apex Legends</h3>
+            <p>Battle Royale gratuito con héroes únicos y combates intensos en equipo.</p>
+          </div>
+        </div>
+        <div class="app-card" onclick="window.open('https://www.factorio.com/', '_blank')">
+          <svg class="app-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#FFD700" d="M15.5 12c0 .55-.45 1-1 1H10v1.5c0 .55-.45 1-1 1s-1-.45-1-1V13H5.5c-.55 0-1-.45-1-1s.45-1 1-1H8v-1.5c0-.55.45-1 1-1s1 .45 1 1V11h3.5c.55 0 1 .45 1 1zm3.5-3c0-1.1-.9-2-2-2h-3V5.5C14 4.12 12.88 3 11.5 3S9 4.12 9 5.5V7H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2v-3h1.5c1.38 0 2.5-1.12 2.5-2.5V9z"/>
+          </svg>
+          <div class="app-info">
+            <h3>Factorio</h3>
+            <p>Construye y gestiona fábricas masivas en este adictivo juego de estrategia y automatización.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>¿Tienes alguna recomendación o pregunta? ¡Contáctanos!</p>
+      <form id="contactForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 RecoApps - Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const navLinks = document.querySelectorAll('nav a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+
+      const form = document.getElementById('contactForm');
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('¡Gracias por tu mensaje! Te responderemos pronto.');
+        form.reset();
+      });
+
+      const randomGameButton = document.getElementById('randomGame');
+      const gameList = document.querySelectorAll('#gameList .app-card');
+
+      randomGameButton.addEventListener('click', () => {
+        const randomIndex = Math.floor(Math.random() * gameList.length);
+        const selectedGame = gameList[randomIndex];
+        selectedGame.scrollIntoView({ behavior: 'smooth' });
+        selectedGame.style.animation = 'highlight 2s';
+        setTimeout(() => {
+          selectedGame.style.animation = '';
+        }, 2000);
+      });
+    });
+  </script>
+
+  <style>
+    @keyframes highlight {
+      0% { transform: scale(1); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+      50% { transform: scale(1.05); box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); }
+      100% { transform: scale(1); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+    }
+  </style>
+</body>
+</html>
